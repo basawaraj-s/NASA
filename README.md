@@ -29,13 +29,13 @@ An interactive 3D web application built with React and Three.js that simulates t
 
 # Data Sources
 
-# NASA Resources Used:
+## NASA Resources Used:
 - **NASA Image and Video Library**: [https://images.nasa.gov](https://images.nasa.gov)
 - **ISS Earth Observations**: [https://eol.jsc.nasa.gov](https://eol.jsc.nasa.gov)
 - **NASA Open APIs**: [https://api.nasa.gov](https://api.nasa.gov)
 - **Blue Marble Textures**: [https://visibleearth.nasa.gov](https://visibleearth.nasa.gov)
 
-# Custom Data Files:
+## Custom Data Files:
 - `src/data/hotspotsData.json` - Earth observation hotspots
 - `src/data/nblTasks.json` - NBL training tasks
 
