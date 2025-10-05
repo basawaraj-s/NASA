@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotspot Images Verification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #1a1a2e;
+            color: white;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #00ff88;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .image-card {
+            background: #16213e;
+            border: 2px solid #0f3460;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .image-card h2 {
+            color: #00ff88;
+            margin-bottom: 15px;
+        }
+
+        .image-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 1px solid #0f3460;
+        }
+
+        .filename {
+            color: #888;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .instructions {
+            background: #0f3460;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .instructions h3 {
+            color: #00ff88;
+            margin-top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>🌍 Hotspot Images Verification</h1>
+
+        <div class="instructions">
+            <h3>📋 Instructions:</h3>
+            <p>Review each image below and verify it matches the location name.</p>
+            <p>If an image is incorrectly named, note which image should be which location:</p>
+            <ul>
+                <li><strong>Sahara Desert:</strong> Should show sandy dunes with ISS robotic arm</li>
+                <li><strong>Himalayas:</strong> Should show snow-capped mountain ranges</li>
+                <li><strong>Great Barrier Reef:</strong> Should show blue coral reef patterns in ocean</li>
+                <li><strong>Great Lakes:</strong> Should show lakes with sediment patterns</li>
+                <li><strong>Antarctic Ice:</strong> Should show colorful false-color ice flow visualization</li>
+            </ul>
+        </div>
+
+        <div class="grid">
+            <div class="image-card">
+                <h2>1. Sahara Desert</h2>
+                <img src="/images/hotspots/sahara-desert.jpg" alt="Sahara Desert"
+                    onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22><text x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22>Image not found</text></svg>'">
+                <div class="filename">sahara-desert.jpg</div>
+                <p>Should show: Sandy dunes with ISS arm</p>
+            </div>
+
+            <div class="image-card">
+                <h2>2. Himalayas</h2>
+                <img src="/images/hotspots/himalayas.jpg" alt="Himalayas"
+                    onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22><text x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22>Image not found</text></svg>'">
+                <div class="filename">himalayas.jpg</div>
+                <p>Should show: Snow-capped mountains</p>
+            </div>
+
+            <div class="image-card">
+                <h2>3. Great Barrier Reef</h2>
+                <img src="/images/hotspots/great-barrier-reef.jpg" alt="Great Barrier Reef"
+                    onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22><text x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22>Image not found</text></svg>'">
+                <div class="filename">great-barrier-reef.jpg</div>
+                <p>Should show: Blue coral patterns</p>
+            </div>
+
+            <div class="image-card">
+                <h2>4. Great Lakes</h2>
+                <img src="/images/hotspots/great-lakes.jpg" alt="Great Lakes"
+                    onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22><text x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22>Image not found</text></svg>'">
+                <div class="filename">great-lakes.jpg</div>
+                <p>Should show: Lakes with sediment</p>
+            </div>
+
+            <div class="image-card">
+                <h2>5. Antarctic Ice Sheets</h2>
+                <img src="/images/hotspots/antarctic-ice.jpg" alt="Antarctic Ice"
+                    onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22><text x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22>Image not found</text></svg>'">
+                <div class="filename">antarctic-ice.jpg</div>
+                <p>Should show: Colorful ice flow visualization</p>
+            </div>
+        </div>
+
+        <div class="instructions" style="margin-top: 40px;">
+            <h3>✏️ To Fix Mismatched Images:</h3>
+            <p>Tell me which image is actually which location, and I'll rename them correctly. For example:</p>
+            <p><em>"Image 1 (sahara-desert.jpg) is actually the Great Lakes, and Image 4 (great-lakes.jpg) is actually
+                    the Sahara"</em></p>
+        </div>
+    </div>
+</body>
+
+</html>

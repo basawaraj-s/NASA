@@ -1,0 +1,357 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Modern Gaming Color Palette */
+:root {
+    --primary-dark: #0a0e27;
+    --secondary-dark: #151a2e;
+    --accent-blue: #00d4ff;
+    --accent-cyan: #00fff2;
+    --accent-purple: #8b5cf6;
+    --accent-pink: #ec4899;
+    --nasa-red: #fc3d21;
+    --success-green: #10b981;
+    --warning-yellow: #fbbf24;
+    --danger-red: #ef4444;
+    --space-gradient-start: #0a0e27;
+    --space-gradient-end: #1a0b2e;
+    --glass-bg: rgba(255, 255, 255, 0.05);
+    --glass-border: rgba(255, 255, 255, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Orbitron', 'Rajdhani', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: linear-gradient(135deg, var(--space-gradient-start) 0%, var(--space-gradient-end) 100%);
+    color: #fff;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+}
+
+/* Animated background particles effect */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+        radial-gradient(2px 2px at 20% 30%, white, transparent),
+        radial-gradient(2px 2px at 60% 70%, var(--accent-cyan), transparent),
+        radial-gradient(1px 1px at 50% 50%, var(--accent-blue), transparent),
+        radial-gradient(1px 1px at 80% 10%, white, transparent),
+        radial-gradient(2px 2px at 90% 60%, var(--accent-purple), transparent),
+        radial-gradient(1px 1px at 33% 80%, white, transparent),
+        radial-gradient(1px 1px at 15% 90%, var(--accent-cyan), transparent);
+    background-size: 200% 200%;
+    background-position: 0% 0%;
+    animation: moveStars 60s ease-in-out infinite;
+    opacity: 0.4;
+    pointer-events: none;
+    z-index: 0;
+}
+
+@keyframes moveStars {
+
+    0%,
+    100% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* Modern Gaming Glass Effect */
+.glass-effect {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow:
+        0 8px 32px 0 rgba(0, 212, 255, 0.1),
+        inset 0 1px 0 0 rgba(255, 255, 255, 0.1);
+}
+
+/* Futuristic Gaming Button */
+.futuristic-btn {
+    position: relative;
+    padding: 0.875rem 2rem;
+    background: linear-gradient(135deg, var(--accent-blue) 0%, var(--accent-purple) 100%);
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 12px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    overflow: hidden;
+    box-shadow:
+        0 0 20px rgba(0, 212, 255, 0.4),
+        0 0 40px rgba(139, 92, 246, 0.2);
+}
+
+.futuristic-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.5s;
+}
+
+.futuristic-btn:hover::before {
+    left: 100%;
+}
+
+.futuristic-btn:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow:
+        0 0 30px rgba(0, 212, 255, 0.6),
+        0 0 60px rgba(139, 92, 246, 0.4),
+        0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: var(--accent-cyan);
+}
+
+.futuristic-btn:active {
+    transform: translateY(-1px) scale(1.02);
+}
+
+/* Gaming Task Card */
+.task-card {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.03) 100%);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 16px;
+    padding: 1.5rem;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.task-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, var(--accent-cyan) 0%, var(--accent-purple) 100%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.task-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    border-color: var(--accent-cyan);
+    box-shadow:
+        0 10px 40px rgba(0, 212, 255, 0.3),
+        0 0 20px rgba(139, 92, 246, 0.2);
+}
+
+.task-card:hover::before {
+    opacity: 0.1;
+}
+
+/* Modern Gaming Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(10, 14, 39, 0.5);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, var(--accent-cyan) 0%, var(--accent-blue) 100%);
+    border-radius: 10px;
+    border: 2px solid rgba(10, 14, 39, 0.5);
+    transition: all 0.3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, var(--accent-blue) 0%, var(--accent-purple) 100%);
+    box-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+}
+
+/* Modern Gaming Animations */
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.animate-float {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+
+    0%,
+    100% {
+        box-shadow:
+            0 0 20px rgba(0, 212, 255, 0.4),
+            0 0 40px rgba(139, 92, 246, 0.2);
+    }
+
+    50% {
+        box-shadow:
+            0 0 40px rgba(0, 212, 255, 0.6),
+            0 0 80px rgba(139, 92, 246, 0.4);
+    }
+}
+
+.pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.slide-in-right {
+    animation: slideInFromRight 0.5s ease-out;
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Modern Loading Spinner */
+.spinner {
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+
+.spinner::before,
+.spinner::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+}
+
+.spinner::before {
+    width: 50px;
+    height: 50px;
+    border: 3px solid transparent;
+    border-top-color: var(--accent-cyan);
+    border-right-color: var(--accent-blue);
+    animation: spin 1s linear infinite;
+}
+
+.spinner::after {
+    width: 40px;
+    height: 40px;
+    top: 5px;
+    left: 5px;
+    border: 3px solid transparent;
+    border-bottom-color: var(--accent-purple);
+    border-left-color: var(--accent-pink);
+    animation: spin 1.5s linear infinite reverse;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Glowing Text Effect */
+.glow-text {
+    text-shadow:
+        0 0 10px rgba(0, 212, 255, 0.8),
+        0 0 20px rgba(0, 212, 255, 0.5),
+        0 0 30px rgba(139, 92, 246, 0.3);
+    animation: textGlow 2s ease-in-out infinite;
+}
+
+@keyframes textGlow {
+
+    0%,
+    100% {
+        text-shadow:
+            0 0 10px rgba(0, 212, 255, 0.8),
+            0 0 20px rgba(0, 212, 255, 0.5);
+    }
+
+    50% {
+        text-shadow:
+            0 0 20px rgba(0, 212, 255, 1),
+            0 0 40px rgba(0, 212, 255, 0.8),
+            0 0 60px rgba(139, 92, 246, 0.5);
+    }
+}
+
+/* Gaming Button Variants */
+.btn-primary {
+    background: linear-gradient(135deg, var(--accent-blue) 0%, var(--accent-cyan) 100%);
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.4);
+}
+
+.btn-secondary {
+    background: linear-gradient(135deg, var(--accent-purple) 0%, var(--accent-pink) 100%);
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.4);
+}
+
+.btn-success {
+    background: linear-gradient(135deg, #10b981 0%, #34d399 100%);
+    box-shadow: 0 0 20px rgba(16, 185, 129, 0.4);
+}
+
+.btn-danger {
+    background: linear-gradient(135deg, var(--nasa-red) 0%, var(--danger-red) 100%);
+    box-shadow: 0 0 20px rgba(252, 61, 33, 0.4);
+}

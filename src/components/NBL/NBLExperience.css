@@ -1,0 +1,94 @@
+.nbl-container {
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+    background: linear-gradient(to bottom, #001a33, #003366);
+}
+
+/* Simple Header */
+.nbl-simple-header {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.score-box,
+.tasks-box {
+    background: linear-gradient(135deg, rgba(252, 61, 33, 0.9), rgba(255, 100, 70, 0.9));
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 20px rgba(252, 61, 33, 0.4);
+}
+
+.tasks-box {
+    background: linear-gradient(135deg, rgba(0, 255, 136, 0.9), rgba(0, 200, 100, 0.9));
+    box-shadow: 0 4px 20px rgba(0, 255, 136, 0.4);
+}
+
+.score-number,
+.tasks-number {
+    font-size: 2rem;
+    font-weight: 900;
+    color: white;
+    line-height: 1;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.score-label,
+.tasks-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.9);
+    letter-spacing: 1px;
+    margin-top: 2px;
+}
+
+.show-tasks-btn {
+    background: linear-gradient(135deg, rgba(11, 61, 145, 0.95), rgba(26, 35, 126, 0.95));
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 170, 0, 0.5);
+    border-radius: 15px;
+    padding: 12px 24px;
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(255, 170, 0, 0.3);
+}
+
+.show-tasks-btn:hover {
+    background: linear-gradient(135deg, rgba(255, 170, 0, 0.9), rgba(255, 200, 50, 0.9));
+    border-color: #ffaa00;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(255, 170, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+    .nbl-simple-header {
+        top: 10px;
+        right: 10px;
+        left: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .score-box,
+    .tasks-box {
+        padding: 8px 15px;
+    }
+
+    .score-number,
+    .tasks-number {
+        font-size: 1.5rem;
+    }
+}

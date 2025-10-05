@@ -1,0 +1,145 @@
+[
+    {
+        "id": 1,
+        "name": "North America",
+        "position": [
+            -40,
+            50,
+            30
+        ],
+        "coordinates": {
+            "lat": 45,
+            "lon": -100
+        },
+        "title": "Great Lakes from ISS",
+        "description": "The Great Lakes region is clearly visible from the ISS Cupola. Astronauts observe the interconnected freshwater lakes that hold about 21% of the world's surface fresh water. Stunning views show sediment patterns, urban development, and the intricate coastlines of these massive inland seas.",
+        "imageUrl": "/images/hotspots/great-lakes.jpg",
+        "observations": [
+            "Sediment plume patterns in the water",
+            "Urban sprawl along lake shores",
+            "Seasonal ice coverage patterns",
+            "Agricultural land meeting water"
+        ],
+        "temperature": "15°C average",
+        "naturalEvents": "Aurora Borealis visible in northern regions, lake-effect snow"
+    },
+    {
+        "id": 2,
+        "name": "Amazon Rainforest",
+        "position": [
+            -20,
+            -10,
+            50
+        ],
+        "coordinates": {
+            "lat": -3,
+            "lon": -60
+        },
+        "title": "Amazon Basin",
+        "description": "The vast Amazon rainforest appears as a lush green expanse from the ISS. The winding Amazon River and its tributaries create stunning patterns across South America.",
+        "imageUrl": "https://images-assets.nasa.gov/image/iss063e041477/iss063e041477~large.jpg",
+        "observations": [
+            "Deforestation patterns visible",
+            "River sediment flows",
+            "Cloud formation over canopy"
+        ],
+        "temperature": "27°C average",
+        "naturalEvents": "Seasonal flooding patterns"
+    },
+    {
+        "id": 3,
+        "name": "Sahara Desert",
+        "position": [
+            10,
+            25,
+            50
+        ],
+        "coordinates": {
+            "lat": 23,
+            "lon": 13
+        },
+        "title": "Sahara Desert from ISS",
+        "description": "The Sahara's endless golden sand dunes create mesmerizing patterns visible from space. From the ISS Cupola, astronauts witness the vast expanse of one of Earth's most extreme environments. Dark patches indicate ancient lake beds and geological features hidden beneath the sand.",
+        "imageUrl": "/images/hotspots/sahara-desert.jpg",
+        "observations": [
+            "Massive sand dune patterns and formations",
+            "Dark geological features beneath sand",
+            "Ancient dried lake beds visible",
+            "Dust storm formations crossing continents"
+        ],
+        "temperature": "30°C average (up to 50°C in summer)",
+        "naturalEvents": "Dust storms transport Saharan sand across Atlantic to Amazon"
+    },
+    {
+        "id": 4,
+        "name": "Himalayas",
+        "position": [
+            80,
+            30,
+            40
+        ],
+        "coordinates": {
+            "lat": 28,
+            "lon": 84
+        },
+        "title": "Himalayan Mountain Range from ISS",
+        "description": "The snow-capped peaks of the Himalayas are breathtaking from the ISS. The world's highest mountains create dramatic shadows and patterns. Home to Mount Everest and eight of the world's ten highest peaks, these mountains form a natural barrier between the Indian subcontinent and the Tibetan Plateau.",
+        "imageUrl": "/images/hotspots/himalayas.jpg",
+        "observations": [
+            "Snow-covered peaks reaching into the atmosphere",
+            "Glacial valleys and formations",
+            "Mountain shadow effects at sunrise/sunset",
+            "Cloud patterns flowing around peaks"
+        ],
+        "temperature": "-15°C at peaks (down to -60°C at summit)",
+        "naturalEvents": "Monsoon cloud patterns, glacier movements"
+    },
+    {
+        "id": 5,
+        "name": "Great Barrier Reef",
+        "position": [
+            145,
+            -18,
+            40
+        ],
+        "coordinates": {
+            "lat": -18,
+            "lon": 147
+        },
+        "title": "Great Barrier Reef from Space",
+        "description": "The world's largest coral reef system is spectacularly visible from space, appearing as stunning turquoise and blue patterns in the deep ocean off Australia's coast. This natural wonder stretches over 2,300 kilometers and is one of the few living structures visible from orbit.",
+        "imageUrl": "/images/hotspots/great-barrier-reef.jpg",
+        "observations": [
+            "Intricate coral reef structures in bright blues",
+            "Lighter patches indicating shallow reef areas",
+            "Ocean current patterns around reefs",
+            "Coastal ecosystems and sediment flows"
+        ],
+        "temperature": "24°C water temp (varies 23-29°C seasonally)",
+        "naturalEvents": "Coral bleaching monitoring area, marine biodiversity hotspot"
+    },
+    {
+        "id": 6,
+        "name": "Antarctica",
+        "position": [
+            0,
+            -85,
+            30
+        ],
+        "coordinates": {
+            "lat": -80,
+            "lon": 0
+        },
+        "title": "Antarctic Ice Sheets - Satellite View",
+        "description": "The vast expanse of Antarctica's ice sheets creates a stunning false-color visualization from space. The continent holds 90% of the world's ice and 70% of its fresh water. This enhanced satellite imagery reveals the complex flow patterns of glaciers and ice streams in vibrant colors.",
+        "imageUrl": "/images/hotspots/antarctic-ice.jpg",
+        "observations": [
+            "Ice flow patterns visualized in false color",
+            "Massive ice shelf formations along coast",
+            "Glacier movement patterns (pink/purple areas)",
+            "Sea ice extent and seasonal variations"
+        ],
+        "temperature": "-30°C average (-60°C in winter)",
+        "naturalEvents": "Aurora Australis displays, ice calving events, katabatic winds"
+    }
+]

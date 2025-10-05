@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "task": "Enter the Hatch",
+        "difficulty": "easy",
+        "instructions": "Achieve neutral buoyancy and carefully move through the training module hatch. Maintain your orientation and avoid contact with the hatch edges.",
+        "targetWeight": 0,
+        "toleranceRange": 2,
+        "duration": 30,
+        "points": 100
+    },
+    {
+        "id": 2,
+        "task": "Fix Solar Panel Module",
+        "difficulty": "medium",
+        "instructions": "Navigate to the mock solar panel array and replace the damaged connection. Adjust your weight to maintain position while working.",
+        "targetWeight": 0,
+        "toleranceRange": 1.5,
+        "duration": 45,
+        "points": 200
+    },
+    {
+        "id": 3,
+        "task": "Collect Lunar Rock Sample",
+        "difficulty": "medium",
+        "instructions": "Descend to the pool floor to collect the lunar rock sample. Add weight to descend, then remove it to ascend back to neutral.",
+        "targetWeight": -3,
+        "toleranceRange": 1,
+        "duration": 60,
+        "points": 250
+    },
+    {
+        "id": 4,
+        "task": "Traverse Pool Floor",
+        "difficulty": "hard",
+        "instructions": "Move horizontally across the pool floor while maintaining contact. This simulates walking on the lunar surface in bulky EVA suits.",
+        "targetWeight": -4,
+        "toleranceRange": 0.5,
+        "duration": 90,
+        "points": 350
+    },
+    {
+        "id": 5,
+        "task": "Emergency Tool Retrieval",
+        "difficulty": "hard",
+        "instructions": "Quickly adjust your buoyancy to retrieve the floating tool, then return to neutral position. Time is critical in this emergency simulation.",
+        "targetWeight": 0,
+        "toleranceRange": 1,
+        "duration": 40,
+        "points": 300
+    },
+    {
+        "id": 6,
+        "task": "Module Connection",
+        "difficulty": "expert",
+        "instructions": "Connect two training modules while maintaining perfect neutral buoyancy. Any drift will cause connection failure.",
+        "targetWeight": 0,
+        "toleranceRange": 0.5,
+        "duration": 120,
+        "points": 500
+    }
+]
