@@ -1,6 +1,6 @@
 # Visit the live demo : https://nasa-seven-tau.vercel.app/
 
-# ISS Cupola & Neutral Buoyancy Lab Experience
+# Window to Wonder
 
 An interactive 3D web application built with React and Three.js that simulates the ISS Cupola Earth observation experience and the Neutral Buoyancy Laboratory training environment.
 
