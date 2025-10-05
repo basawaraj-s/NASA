@@ -8,15 +8,7 @@ An interactive 3D web application built with React and Three.js that simulates t
 ![React](https://img.shields.io/badge/React-18.2.0-61DAFB?style=for-the-badge&logo=react)
 ![Three.js](https://img.shields.io/badge/Three.js-3D_Graphics-000000?style=for-the-badge&logo=three.js)
 
-# Features
 
-# ISS Cupola Experience
-- **3D Rotating Earth** with realistic textures and space environment
-- **Interactive Hotspots** on continents with NASA imagery and facts
-- **Starfield Background** for immersive space effect
-- **Smooth Camera Controls** - zoom, rotate, and pan
-- **Educational Content** - NASA astronaut photos, observations, and data
-- **Real-time Information** - altitude, speed, and orbit details
 
 # Technology Stack
 
