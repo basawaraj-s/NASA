@@ -6,7 +6,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Canvas } from '@react-three/fiber';
 import NBLSceneEnhanced from './NBLSceneEnhanced';
-import './NBLExperienceEnhanced.css';
 
 const NBLExperienceEnhanced = () => {
     // ============================================
