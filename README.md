@@ -44,33 +44,6 @@ An interactive 3D web application built with React and Three.js that simulates t
 - Node.js (v14 or higher)
 - npm or yarn package manager
 
-## 🚀 Installation
-
-1. **Clone or navigate to the project directory:**
-   ```bash
-   cd "C:\Users\Paul Raj\Nasa o1"
-   ```
-
-2. **Install dependencies:**
-   ```bash
-   npm install
-   ```
-
-3. **Start the development server:**
-   ```bash
-   npm start
-   ```
-
-4. **Open your browser:**
-   The app will automatically open at `http://localhost:3000`
-
-## 📦 Build for Production
-
-```bash
-npm run build
-```
-
-This creates an optimized production build in the `build` folder.
 
 ## 🎮 How to Use
 
