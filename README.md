@@ -1,6 +1,6 @@
 # Visit the live demo : https://nasa-seven-tau.vercel.app/
 
-# 🚀 ISS Cupola & Neutral Buoyancy Lab Experience
+# ISS Cupola & Neutral Buoyancy Lab Experience
 
 An interactive 3D web application built with React and Three.js that simulates the ISS Cupola Earth observation experience and the Neutral Buoyancy Laboratory training environment.
 
@@ -8,9 +8,9 @@ An interactive 3D web application built with React and Three.js that simulates t
 ![React](https://img.shields.io/badge/React-18.2.0-61DAFB?style=for-the-badge&logo=react)
 ![Three.js](https://img.shields.io/badge/Three.js-3D_Graphics-000000?style=for-the-badge&logo=three.js)
 
-# 🌟 Features
+# Features
 
-# 🌍 ISS Cupola Experience
+# ISS Cupola Experience
 - **3D Rotating Earth** with realistic textures and space environment
 - **Interactive Hotspots** on continents with NASA imagery and facts
 - **Starfield Background** for immersive space effect
@@ -18,7 +18,7 @@ An interactive 3D web application built with React and Three.js that simulates t
 - **Educational Content** - NASA astronaut photos, observations, and data
 - **Real-time Information** - altitude, speed, and orbit details
 
-# 🛠️ Technology Stack
+# Technology Stack
 
 - **React** 18.2.0 - UI framework
 - **Three.js** - 3D graphics rendering
@@ -27,7 +27,7 @@ An interactive 3D web application built with React and Three.js that simulates t
 - **TailwindCSS** - Styling framework
 - **PostCSS** - CSS processing
 
-# 📊 Data Sources
+# Data Sources
 
 # NASA Resources Used:
 - **NASA Image and Video Library**: [https://images.nasa.gov](https://images.nasa.gov)
